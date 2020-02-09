@@ -16,3 +16,6 @@
 [submodule "zsh"]
 	path = zsh
 	url = https://github.com/CharlesGueunet/zsh-config.git
+[submodule "kak"]
+	path = kak
+	url = https://github.com/CharlesGueunet/kak.git
