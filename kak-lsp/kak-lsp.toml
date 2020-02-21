@@ -10,3 +10,8 @@ roots = [".ccls-root", ".ccls", "build/compile_commands.json", "compile_commands
 command = "ccls"
 # args = ["--log-file=/tmp/cq.log", "--init={\"cacheDirectory\": \"/home/charles/.cache/cquery\"}"]
 args = ["--init={\"completion\":{\"detailedLabel\":false}}"]
+
+# [language.python]
+# extensions = ["py"]
+# roots = ["requirements.txt", "setup.py", ".git", ".hg"]
+# command = "pyls"
