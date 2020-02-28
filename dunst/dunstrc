@@ -8,7 +8,7 @@
 #------------------------------------------------------------
 
 [global]
-font = Roboto 9
+font = FiraCode 9
 
 # Allow a small subset of html markup:
 #   <b>bold</b>
@@ -76,7 +76,7 @@ hide_duplicates_count = yes
 # The width can be negative.  In this case the actual width is the
 # screen width minus the width defined in within the geometry option.
 #geometry = "250x50-40+40"
-geometry = "400x300-10+30"
+geometry = "400x300-10-30"
 
 # Define the corner radius of the notification window
 # in pixel size. If the radius is 0, you have no rounded
@@ -158,7 +158,7 @@ startup_notification = false
 dmenu = /usr/bin/dmenu -p dunst:
 
 # Browser for opening urls in context menu.
-browser = /usr/bin/vivaldi-stable -new-tab
+browser = firefox
 
 # Align icons left/right/off
 icon_position = left
