@@ -17,13 +17,13 @@
 ;==========================================================
 
 [colors]
-background = #263238
-background-alt = #444
-foreground = #dfdfdf
-foreground-alt = #555
-primary = #ffb52a
-secondary = #e60053
-alert = #bd2c40
+background = ${xrdb:color0:#263238}
+background-alt = ${xrdb:color66:#444}
+foreground = ${xrdb:color7:#dfdfdf}
+foreground-alt = ${xrdb:color15:#555}
+primary = ${xrdb:color1:#ffb52a}
+secondary = ${xrdb:color2:#e60053}
+alert = ${xrdb:color3:#bd2c40}
 
 [bar/main]
 bottom = true
@@ -52,10 +52,10 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm i3
 modules-center = xwindow
-modules-right = filesystem xbacklight pulseaudio memory cpu temperature battery date powermenu
+modules-right = filesystem xbacklight pulseaudio memory cpu temperature battery date
 
 tray-position = right
-tray-padding = 2
+tray-padding = 1
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
