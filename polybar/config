@@ -37,8 +37,12 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-border-size = 0
-border-color = #00000000
+# border-size = 0
+# border-color = #990000
+border-left-size = 3
+border-right-size = 3
+border-bottom-size = 3
+border-top-size = 3
 
 padding-left = 0
 padding-right = 2
@@ -46,28 +50,30 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
+radius = 10.10
+
 font-0 = FiraCode-Regular:size=9;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-1 = LiberationSans-Regular:size=9;1
 font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm i3
 modules-center = xwindow
-modules-right = filesystem xbacklight pulseaudio memory cpu temperature battery date
+modules-right = filesystem xbacklight pulseaudio memory cpu temperature battery wlan date
 
 tray-position = right
 tray-padding = 1
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
-wm-restack = i3
+;wm-restack = i3
 
 ;override-redirect = true
 
 ;scroll-up = bspwm-desknext
 ;scroll-down = bspwm-deskprev
 
-scroll-up = i3wm-wsnext
-scroll-down = i3wm-wsprev
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -214,7 +220,7 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = 
+interface = wlp3s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
@@ -408,7 +414,7 @@ screenchange-reload = true
 ;compositing-background = screen
 ;compositing-foreground = source
 ;compositing-border = over
-;pseudo-transparency = false
+pseudo-transparency = true
 
 [global/wm]
 margin-top = 5
