@@ -884,48 +884,34 @@ color: var(--third-text) !important;
     opacity: 0 !important;
 }
 
-/* SIDEBAR */
+/* Tab redux */
 
-/*
-:root {
-  --sidebar-hover-width: 25px;
-  --sidebar-visible-width: 320px;
+/* To copy paste:
+
+#topmenu {
+  display: none;
 }
-
-#sidebar-box {
-  position: relative !important;
-  overflow-x: hidden !important;
-  margin-right: calc(var(--sidebar-hover-width) * -1) !important;
-  left: var(--sidebar-hover-width) !important;
-  min-width: var(--sidebar-hover-width) !important;
-  max-width: var(--sidebar-hover-width) !important;
-
-  background-color: #263238 !important;
-
-  opacity: 0.7 !important;
-  transition: all 250ms cubic-bezier(0.075, 0.820, 0.165, 1.000);
+.tab-close {
+  display: none;
 }
-
-#sidebar-box:hover {
-  margin-right: calc(var(--sidebar-visible-width) * -1) !important;
-  left: var(--sidebar-visible-width) !important;
-  min-width: var(--sidebar-visible-width) !important;
-  max-width: var(--sidebar-visible-width) !important;
-  
-  opacity: 1 !important;
-  transition: all 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000);
+.tab:hover:not(.pinned) > .tab-title-wrapper {
+  mask-image: linear-gradient(to left, transparent 0, black 2em);
 }
-
-#sidebar {
-  opacity: 0.7 !important;
-  background-color: #263238 !important;
-
-  transition: all 200ms cubic-bezier(0.075, 0.820, 0.165, 1.000);
+#tablist-wrapper {
+  scrollbar-width: #topmenu {
+  display: none;
 }
-
-#sidebar:hover {
-  opacity: 1 !important;
-
-  transition: all 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000);
+.tab-close {
+  display: none;
+}
+.tab:hover:not(.pinned) > .tab-title-wrapper {
+  mask-image: linear-gradient(to left, transparent 0, black 2em);
+}
+#tablist-wrapper {
+  scrollbar-width: none;
+  background-color: #263238;
+}
+none;
+  background-color: #263238;
 }
 */
