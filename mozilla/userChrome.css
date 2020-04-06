@@ -1,0 +1,34 @@
+/* hides the native tabs */
+#TabsToolbar {
+  visibility: collapse;
+}
+
+#sidebar-header {
+  visibility: collapse !important;
+  background: var(--url-bg) !important; 
+  color: var(--third-text) !important;
+}
+
+#sidebar {
+  max-width: none !important;
+  min-width: 0px !important;
+  background: var(--url-bg) !important; 
+  color: var(--third-text) !important;
+}
+
+#urlbar-container {
+  background-color: var(--url-bg) !important;
+}
+
+#search-container {
+  background-color: var(--url-bg) !important;
+}
+
+#urlbar {
+  background: var(--url-bg) !important; 
+  color: var(--third-text) !important;
+  text-align: center !important;
+  margin-top: 0px !important;
+  border: none !important;
+  box-shadow: none !important;
+}
