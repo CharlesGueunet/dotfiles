@@ -39,10 +39,10 @@ line-color = #f00
 
 # border-size = 0
 # border-color = #990000
-border-left-size = 3
-border-right-size = 3
-border-bottom-size = 5
-border-top-size = 2
+border-left-size = 6
+border-right-size = 6
+border-bottom-size = 6
+border-top-size = 0
 
 padding-left = 0
 padding-right = 2
