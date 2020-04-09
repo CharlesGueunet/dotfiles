@@ -217,7 +217,7 @@ bar-load-indicator-foreground = #55fdf6e3
 bar-load-fill = |
 bar-load-fill-font = 3
 bar-load-empty = :
-bar-load-empty-font = 3
+bar-load-empty-font = 2
 bar-load-empty-foreground = #99586e75
 
 [module/memory]
@@ -241,7 +241,7 @@ bar-used-indicator-foreground = #fff
 bar-used-fill = |
 bar-used-fill-font = 3
 bar-used-empty = :
-bar-used-empty-font = 3
+bar-used-empty-font = 2
 bar-used-empty-foreground = #44
 
 [module/date]
