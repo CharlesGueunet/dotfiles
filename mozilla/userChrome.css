@@ -28,7 +28,7 @@
 #urlbar {
   background: #263238 !important; 
   color: var(--third-text) !important;
-  text-align: center !important;
+  /* text-align: center !important; */
   margin-top: 0px !important;
   border: none !important;
   box-shadow: none !important;
@@ -267,7 +267,7 @@ filter: grayscale(100%) contrast(25%) !important;
 #urlbar {
     background: #263238 !important; 
     color: var(--third-text) !important;
-   text-align: center !important;
+    /* text-align: center !important; */
     margin-top: 0px !important;
     border: none !important;
     box-shadow: none !important;
@@ -455,6 +455,7 @@ color: var(--main-text) !important;
 
 /* center text */
 
+/*
 .tab-text {
     text-align: center !important;
 }
@@ -463,6 +464,7 @@ color: var(--main-text) !important;
     -moz-box-flex: 1 !important; 
     text-align: center !important;
 }
+*/
 
 /* menu bar color */
 #main-menubar, #toolbar-menubar, #menubar-items, menubar > menu {
