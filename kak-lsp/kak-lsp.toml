@@ -11,6 +11,12 @@ command = "ccls"
 # args = ["--log-file=/tmp/cq.log", "--init={\"cacheDirectory\": \"/home/charles/.cache/cquery\"}"]
 args = ["--init={\"completion\":{\"detailedLabel\":false}}"]
 
+[language.cmake]
+filetypes= ["cmake"]
+command= "cmake-language-server"
+roots= [ "build/" ]
+# initializationOptions = { "buildDirectory": "build" }
+
 # [language.python]
 # extensions = ["py"]
 # roots = ["requirements.txt", "setup.py", ".git", ".hg"]
