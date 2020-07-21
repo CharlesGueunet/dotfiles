@@ -16,7 +16,7 @@ args = ["--init={\"completion\":{\"detailedLabel\":false}}"]
 # command= "cmake-language-server"
 # roots= [ "build/" ]
 
-# [language.python]
-# extensions = ["py"]
-# roots = ["requirements.txt", "setup.py", ".git", ".hg"]
-# command = "pyls"
+[language.python]
+filetypes = ["py"]
+roots = ["requirements.txt", "setup.py", ".git", ".hg"]
+command = "pyls"
