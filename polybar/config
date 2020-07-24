@@ -27,7 +27,6 @@ alert = ${xrdb:color3:#bd2c40}
 
 [bar/main]
 bottom = true
-width = 100%
 height = 25
 fixed-center = false
 
@@ -56,8 +55,23 @@ font-0 = FiraCode-Regular:size=9;1
 font-1 = LiberationSans-Regular:size=9;1
 font-2 = siji:pixelsize=10;1
 
+[bar/left]
+inherit = bar/main
+width = 17%
 modules-left = bspwm i3
+
+[bar/center]
+inherit = bar/main
+override-redirect = true
+width = 30%
+offset-x = 35%
 modules-center = xwindow
+
+[bar/right]
+inherit = bar/main
+override-redirect = true
+width = 20%
+offset-x = 80%
 modules-right = xbacklight pulseaudio cpu memory battery date
 
 tray-position = right
