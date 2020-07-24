@@ -63,7 +63,7 @@ modules-left = bspwm i3
 [bar/center]
 inherit = bar/main
 override-redirect = true
-width = 30%
+width = 26%
 offset-x = 35%
 modules-center = xwindow
 
