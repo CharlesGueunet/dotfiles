@@ -29,6 +29,7 @@ alert = ${xrdb:color3:#bd2c40}
 bottom = true
 height = 25
 fixed-center = false
+width = 100%
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -36,8 +37,8 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-# border-size = 0
-# border-color = #990000
+;border-size = 0
+;border-color = #990000
 border-left-size = 6
 border-right-size = 6
 border-bottom-size = 6
@@ -55,23 +56,23 @@ font-0 = FiraCode-Regular:size=9;1
 font-1 = LiberationSans-Regular:size=9;1
 font-2 = siji:pixelsize=10;1
 
-[bar/left]
-inherit = bar/main
-width = 17%
+;[bar/left]
+;inherit = bar/main
+;width = 17%
 modules-left = bspwm i3
 
-[bar/center]
-inherit = bar/main
-override-redirect = true
-width = 26%
-offset-x = 35%
+;[bar/center]
+;inherit = bar/main
+;override-redirect = true
+;width = 26%
+;offset-x = 35%
 modules-center = xwindow
 
-[bar/right]
-inherit = bar/main
-override-redirect = true
-width = 20%
-offset-x = 80%
+;[bar/right]
+;inherit = bar/main
+;override-redirect = true
+;width = 20%
+;offset-x = 80%
 modules-right = xbacklight pulseaudio cpu memory battery date
 
 tray-position = right
