@@ -4,4 +4,5 @@
 #     sleep 30;
 # done&
 dunst&
+sh ~/.screenlayout/normal.sh
 exec i3
