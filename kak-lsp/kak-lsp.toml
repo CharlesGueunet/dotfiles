@@ -17,5 +17,5 @@ args = ["--init={\"completion\":{\"detailedLabel\":false}}"]
 
 [language.python]
 filetypes = ["py"]
-roots = ["requirements.txt", "setup.py", ".git", ".hg"]
+# roots = ["requirements.txt", "setup.py", ".git", ".hg"]
 command = "pyls"
