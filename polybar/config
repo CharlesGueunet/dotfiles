@@ -41,8 +41,8 @@ line-color = #f00
 ;border-color = #990000
 border-left-size = 6
 border-right-size = 6
-border-bottom-size = 6
-border-top-size = 0
+# border-bottom-size = 6
+border-top-size = 1
 
 padding-left = 0
 padding-right = 2
@@ -50,7 +50,7 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-radius = 10.10
+# radius = 10.10
 
 font-0 = FiraCode-Regular:size=9;1
 font-1 = LiberationSans-Regular:size=9;1
