@@ -5,28 +5,28 @@
 
 #sidebar-header {
   visibility: collapse !important;
-  background: #263238 !important;
+  background: #222222 !important;
   color: var(--third-text) !important;
 }
 
 #sidebar {
   max-width: none !important;
   min-width: 28px !important;
-  background: #263238 !important;
+  background: #222222 !important;
   color: var(--third-text) !important;
   margin-right: -5px !important;
 }
 
 #urlbar-container {
-  background-color: #263238 !important;
+  background-color: #222222 !important;
 }
 
 #search-container {
-  background-color: #263238 !important;
+  background-color: #222222 !important;
 }
 
 #urlbar {
-  background: #263238 !important; 
+  background: #222222 !important; 
   color: var(--third-text) !important;
   /* text-align: center !important; */
   margin-top: 0px !important;
@@ -68,7 +68,7 @@ Enjoy <3
   --tab-bg: #14151F !important;
                 /* tab bg */
 
-  #263238 #1D1E2A !important;
+  #222222 #1D1E2A !important;
      /* nav bar/url section */
 
   --browser-bg: #1A1B26 !important;
@@ -161,14 +161,14 @@ opacity: 0.6 !important;
 
                    /* fix white bg when opening new tabs -- to fix*/
 browser, browser.display.background_color, tabbrowser tabpanels, .browserStack > browser, .browserStack { 
-  background: #263238 !important; 
-  background-color: #263238 !important; 
+  background: #222222 !important; 
+  background-color: #222222 !important; 
 }
 
 
                             /* page identity box */
 #identity-box {
-    background: #263238 !important; 
+    background: #222222 !important; 
     color: var(--secondary-text) !important;
     opacity: 0 !important;
 /*     display: none !important; */
@@ -237,7 +237,7 @@ filter: grayscale(100%) contrast(25%) !important;
 
 #PanelUI-footer-inner > toolbarseparator {
     border: none !important;
-    background-color: #263238 !important;
+    background-color: #222222 !important;
 }
 
 /*remove blue browser border 
@@ -261,11 +261,11 @@ filter: grayscale(100%) contrast(25%) !important;
 
 /* nav bg color and sizes */
 #nav-bar-customization-target {
-    background: #263238 !important;
+    background: #222222 !important;
 }
 
 #urlbar {
-    background: #263238 !important; 
+    background: #222222 !important; 
     color: var(--third-text) !important;
     /* text-align: center !important; */
     margin-top: 0px !important;
@@ -284,7 +284,7 @@ filter: grayscale(100%) contrast(25%) !important;
 
 /* navbar */
     #navigator-toolbox > toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(:-moz-lwtheme) {
-        background-color: #263238 !important;
+        background-color: #222222 !important;
         margin-bottom: -2px !important;
     }
 
@@ -307,14 +307,14 @@ toolbar #urlbar-container, toolbar #urlbar {
 toolbar #urlbar[focused] {
   min-width:600px !important;
   opacity:1!Important;
-  #263238 url(https://puu.sh/qGUBB/02d65ae288.png)!important;
+  #222222 url(https://puu.sh/qGUBB/02d65ae288.png)!important;
   background-size:22px!important; 
   background-repeat:no-repeat!important;
   background-position:12px center!important;
 }
 
 toolbar #urlbar:hover {
-    #263238 url(https://puu.sh/qGUBB/02d65ae288.png)!important;
+    #222222 url(https://puu.sh/qGUBB/02d65ae288.png)!important;
   background-size:22px!important; 
   background-repeat:no-repeat!important;
   background-position:12px center!important;
@@ -331,7 +331,7 @@ toolbar #urlbar {
   padding-right:10px!important;
   box-sizing:border-box!Important;
   overflow:hidden!Important;
-  background: #263238 url(https://puu.sh/qGUBB/02d65ae288.png)!important;
+  background: #222222 url(https://puu.sh/qGUBB/02d65ae288.png)!important;
   background-size:22px!important; 
   background-repeat:no-repeat!important;
   background-position:12px center!important;
@@ -355,7 +355,7 @@ toolbar #urlbar-container {
 
 /* plugin icons */
 #notification-popup-box, .unknownIdentity {
-     background-color: #263238 !important;
+     background-color: #222222 !important;
     border-image-source: none !important;
 }
 
@@ -379,7 +379,7 @@ color: var(--main-text) !important;
   background-size: 100% 100% !important;
     background-repeat: no-repeat !important;
   color: var(--secondary-text) !important; 
-  border-bottom: 2px solid #263238 !important;
+  border-bottom: 2px solid #222222 !important;
   /*border-bottom: none !important;*/
   opacity: 1 !important;  
   margin-top: -2px !important; 
@@ -477,7 +477,7 @@ color: var(--main-text) !important;
 
 /* menu icon */
 #PanelUI-button, #nav-bar-overflow-button {
-    background: #263238 !important;
+    background: #222222 !important;
 }
 
 /* back/forward buttons*/
@@ -508,7 +508,7 @@ color: var(--main-text) !important;
        /*margin-left: 0px !important; */
        /*margin-top: -1px !important; */
        /*margin-bottom: -2px !important;*/
-       background-color: #263238 !important;
+       background-color: #222222 !important;
        max-width: 25px !important;
        /*max-height: 30px !important;*/
    }
@@ -548,7 +548,7 @@ opacity: 0.5 !important;
 /* menu button */
 #PanelUI-button {
     background: url('https://i.imgur.com/KH42jDc.png') !important;    
-    background-color: #263238 !important;
+    background-color: #222222 !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
     box-shadow: none !important;
@@ -594,7 +594,7 @@ list-style-image: url("https://puu.sh/leYZ9/1769a4b8b7.ico") !important;
 /* bookmark icon */
 #bookmarks-menu-button {
     background-image: url('https://puu.sh/qHQDH/ca332e6e20.png') !important;
-    background-color: #263238 !important;
+    background-color: #222222 !important;
     background-repeat: no-repeat  !important;
     background-position: center !important;
     opacity: 0.7 !important;
@@ -607,7 +607,7 @@ list-style-image: url("https://puu.sh/leYZ9/1769a4b8b7.ico") !important;
 }
 /* bookmark icon */
 #bookmarks-menu-button:hover {
-    background-color: #263238 !important;
+    background-color: #222222 !important;
     background-repeat: no-repeat  !important;
     background-position: center !important;
     opacity: 0.4 !important;
@@ -634,7 +634,7 @@ list-style-image: url("https://puu.sh/leYZ9/1769a4b8b7.ico") !important;
 
 /* new tab */
 .tabs-newtab-button {
-    background: #263238 !important;
+    background: #222222 !important;
     width: 40px !important;
      margin-left: 0px !important;
     list-style-image: url('https://puu.sh/r4ZBa/ac8f176203.png') !important;
@@ -676,13 +676,13 @@ list-style-image: url("https://puu.sh/leYZ9/1769a4b8b7.ico") !important;
     
 statuspanel[type="overLink"] .statuspanel-label {
 margin-bottom: 0px !important;    
-background: #263238 !important;
+background: #222222 !important;
 border: 0px !important;
 color: var(--third-text) !important;
 }
 
 statuspanel .statuspanel-label {
-background: #263238 !important;
+background: #222222 !important;
 border: 0px !important;
 color: var(--third-text) !important;
 }
@@ -691,7 +691,7 @@ statuspanel[type="status"] .statuspanel-label[value^="Looking"],
 statuspanel[type="status"] .statuspanel-label[value^="Connect"],
 statuspanel[type="status"] .statuspanel-label[value^="Waiting"],
 statuspanel[type="status"] .statuspanel-label[value^="Transfer"] {
-background: #263238 !important;
+background: #222222 !important;
 border: 0px solid !important;
 color: var(--third-text) !important;
 }        
@@ -860,7 +860,7 @@ color: var(--third-text) !important;
      color: var(--main-text) !important;   
 }
 .download.download-state, #clearDownloadsButton, richlistitem:not([selected]):hover, .addon[selected]:hover {
-    background: #263238 !important;
+    background: #222222 !important;
      color: var(--third-text) !important;   
 }      
 #placesToolbar, #placesView > splitter, #searchFilter, .checkbox-check, .fxaAccountBox, #verifiedManage, #fxaUnlinkButton, #fxaChangeDeviceName, #fxaSyncComputerName, .header, spacer.separator, #tabsElement, #handlersView > listheader, #engineList > treecols, #textbox, #configTree {
@@ -873,7 +873,7 @@ color: var(--third-text) !important;
 
 .addon[selected] {
     border: none !important;   
-    background: #263238 !important;
+    background: #222222 !important;
 }  
   
 /* remove useless UI */
@@ -911,9 +911,9 @@ color: var(--third-text) !important;
 }
 #tablist-wrapper {
   scrollbar-width: none;
-  background-color: #263238;
+  background-color: #222222;
 }
 none;
-  background-color: #263238;
+  background-color: #222222;
 }
 */
