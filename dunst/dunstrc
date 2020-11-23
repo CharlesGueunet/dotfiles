@@ -190,7 +190,7 @@ context = ctrl+shift+period
 # Otherwise the "#" and following would be interpreted as a comment.
 frame_color = "#C3E88D"
 foreground  = "#EEFFFF"
-background  = "#263238"
+background  = "#222222"
 timeout     = 4
 
 [urgency_normal]
