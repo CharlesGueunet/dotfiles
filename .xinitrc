@@ -3,6 +3,8 @@
 #     sh ~/.config/wallpaper.sh &
 #     sleep 30;
 # done&
-dunst&
+dunst &
+syncthing -no-browser &
+pueued &
 sh ~/.screenlayout/normal.sh
 exec i3
