@@ -196,13 +196,13 @@ timeout     = 4
 [urgency_normal]
 frame_color = "#FFCB6B"
 foreground  = "#EEFFFF"
-background  = "#263238"
+background  = "#222222"
 timeout     = 6
 
 [urgency_critical]
 frame_color = "#F07178"
 foreground  = "#EEFFFF"
-background  = "#263238"
+background  = "#222222"
 timeout     = 8
 
 # Every section that isn't one of the above is interpreted as a rules to
