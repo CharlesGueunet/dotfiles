@@ -20,4 +20,4 @@ when = '[ "$KAKOUNE_SESSION" ] || [ "$KAKOUNE_CLIENT" ]'
 shell = ['sh']
 description = 'The current Kakoune session and client'
 style = 'green'
-format = '[$symbol $output]($style)'
+format = '[$symbol $output ]($style)'
