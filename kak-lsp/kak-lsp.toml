@@ -20,3 +20,7 @@ args = ["--init={\"completion\":{\"detailedLabel\":false}}"]
 filetypes = ["py"]
 roots = ["requirements.txt", "setup.py", ".git", ".hg"]
 command = "pyls"
+
+[language.sh]
+filetypes = ["sh"]
+command = "bash-language-server"
