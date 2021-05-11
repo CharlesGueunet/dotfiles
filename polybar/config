@@ -73,7 +73,7 @@ modules-center = xwindow
 ;override-redirect = true
 ;width = 20%
 ;offset-x = 80%
-modules-right = xbacklight pulseaudio cpu memory battery date
+modules-right = xbacklight backlight-acpi pulseaudio cpu memory battery date
 
 tray-position = right
 tray-padding = 1
@@ -176,7 +176,7 @@ label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
 label-urgent = %index%
-label-urgent-background = ${colors.alert}
+label-urgent-foreground = ${colors.alert}
 label-urgent-padding = 2
 
 ; Separator in between workspaces
@@ -305,7 +305,7 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 
 [module/battery]
 type = internal/battery
-battery = BAT1
+battery = BAT0
 adapter = ACAD
 full-at = 98
 
