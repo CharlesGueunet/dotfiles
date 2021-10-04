@@ -15,8 +15,8 @@ behind = "⇣${count}"
 
 [custom.kakoune]
 symbol = '¶'
-command = 'printf "%s@%s" "${KAKOUNE_CLIENT:-null}" "$KAKOUNE_SESSION"'
-when = '[ "$KAKOUNE_SESSION" ] || [ "$KAKOUNE_CLIENT" ]'
+command = 'printf "%s@%s" "${KKS_CLIENT:-null}" "$KKS_SESSION"'
+when = '[ "$KKS_SESSION" ] || [ "$KKS_CLIENT" ]'
 shell = ['sh']
 description = 'The current Kakoune session and client'
 style = 'green'
