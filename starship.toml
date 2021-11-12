@@ -4,12 +4,19 @@ add_newline = true
 truncate_to_repo = true
 truncation_symbol = "…"
 
+[cmake]
+symbol = ' '
+version_format="${major}.${minor}"
+
 [git_status]
 # fast lookup
 format ='([\[$ahead_behind\]]($style) )'
 ahead = "⇡${count}"
 diverged = "⇕⇡${ahead_count}⇣${behind_count}"
 behind = "⇣${count}"
+
+[nodejs]
+disabled = "true"
 
 [custom]
 
