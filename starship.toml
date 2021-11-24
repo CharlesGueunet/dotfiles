@@ -5,7 +5,7 @@ truncate_to_repo = true
 truncation_symbol = "…"
 
 [cmake]
-symbol = ' '
+symbol = '⚙ '
 version_format="${major}.${minor}"
 
 [git_status]
