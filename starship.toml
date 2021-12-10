@@ -20,6 +20,15 @@ disabled = "true"
 
 [custom]
 
+[custom.starship]
+symbol = '⏱'
+command = 'pueue status --json | jq ".tasks[] | .status" | grep "Queued\|Running" | wc -l'
+when = ' test $(pueue status --json | jq ".tasks[] | .status" | grep "Queued\|Running" | wc -l) != 0 '
+shell = ['sh']
+description = 'The current pueue count'
+style = 'red'
+format = '[$symbol $output ]($style)'
+
 [custom.kakoune]
 symbol = '¶'
 command = 'printf "%s@%s" "${KKS_CLIENT:-null}" "$KKS_SESSION"'
@@ -28,3 +37,4 @@ shell = ['sh']
 description = 'The current Kakoune session and client'
 style = 'green'
 format = '[$symbol $output ]($style)'
+

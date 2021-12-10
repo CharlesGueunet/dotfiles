@@ -16,9 +16,16 @@ command= "cmake-language-server"
 roots= [ "build/" ]
 
 [language.python]
-filetypes = ["py"]
+filetypes = ["python"]
 roots = ["requirements.txt", "setup.py", ".git", ".hg"]
 command = "pyls"
+offset_encoding = "utf-8"
+workaround_server_sends_plaintext_labeled_as_markdown = true
+settings_section = "_"
+[language.python.settings._]
+# See https://github.com/palantir/python-language-server#configuration
+# and https://github.com/palantir/python-language-server/blob/develop/vscode-client/package.json
+pyls.configurationSources = ["flake8"]
 
 [language.sh]
 filetypes = ["sh"]
@@ -57,7 +64,8 @@ face = "operator"
 
 [[semantic_tokens]]
 token = "comment"
-face = "comment"
+face = "documentation"
+modifiers = ["documentation"]
 
 [[semantic_tokens]]
 token = "comparison"
@@ -158,6 +166,16 @@ face = "operator"
 [[semantic_tokens]]
 token = "unresolvedReference"
 face = "module"
+
+[[semantic_tokens]]
+token = "variable"
+face = "default+d"
+modifiers = ["readonly"]
+
+[[semantic_tokens]]
+token = "variable"
+face = "default+d"
+modifiers = ["constant"]
 
 [[semantic_tokens]]
 token = "variable"
