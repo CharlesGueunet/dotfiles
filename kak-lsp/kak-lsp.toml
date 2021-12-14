@@ -4,11 +4,17 @@ verbosity = 2
 [server]
 timeout = 1800 # seconds = 30 minutes
 
+# [language.c_cpp]
+# filetypes = ["c", "cpp"]
+# roots = [".ccls-root", ".ccls", "compile_commands.json", "./build/compile_commands.json"]
+# command = "ccls"
+# args = ["--init={\"completion\":{\"detailedLabel\":false}}"]
+
 [language.c_cpp]
 filetypes = ["c", "cpp"]
-roots = [".ccls-root", ".ccls", "compile_commands.json", "./build/compile_commands.json"]
-command = "ccls"
-args = ["--init={\"completion\":{\"detailedLabel\":false}}"]
+roots = ["compile_commands.json", "./build/compile_commands.json", ".clangd", ".git", ".hg"]
+command = "clangd"
+offset_encoding = "utf-8"
 
 [language.cmake]
 filetypes= ["cmake"]
