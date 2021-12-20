@@ -73,7 +73,7 @@ modules-center = xwindow
 ;override-redirect = true
 ;width = 20%
 ;offset-x = 80%
-modules-right = xbacklight backlight-acpi pulseaudio cpu memory battery date
+modules-right = backlight-acpi pulseaudio cpu memory battery date
 
 tray-position = right
 tray-padding = 1
@@ -299,7 +299,7 @@ bar-volume-indicator = |
 bar-volume-indicator-font = 3
 bar-volume-fill = ─
 bar-volume-fill-font = 3
-bar-volume-empty = ─ 
+bar-volume-empty = ─
 bar-volume-empty-font = 3
 bar-volume-empty-foreground = ${colors.foreground-alt}
 
