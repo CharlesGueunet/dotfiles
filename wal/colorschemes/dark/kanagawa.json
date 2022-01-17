@@ -1,6 +1,6 @@
 {
     "colors": {
-        "color0": "#090618",
+        "color0": "#2E2D2D",
         "color1": "#C34043",
         "color2": "#76946A",
         "color3": "#C0A36E",
@@ -21,7 +21,7 @@
     },
     "special": {
         "foreground": "#DCD7BA",
-        "background": "#1F1F28",
+        "background": "#1C1C1C",
         "cursor": "#C8C093"
     }
 }
