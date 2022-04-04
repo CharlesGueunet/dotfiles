@@ -1,5 +1,7 @@
-snippet_support = false
-verbosity = 2
+lsp_hover_anchor=true
+lsp_hover_max_lines=6
+snippet_support = true
+verbosity = 3
 
 [server]
 timeout = 1800 # seconds = 30 minutes
