@@ -38,7 +38,8 @@ pyls.configurationSources = ["flake8"]
 [language.sh]
 filetypes = ["sh"]
 command = "bash-language-server"
-roots = ["."]
+roots = [".", ".git", ".hg"]
+args = ["start"]
 
 # SEMANTIC TOKENS
 
