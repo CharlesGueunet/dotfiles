@@ -6,6 +6,8 @@ show history
 
 set prompt ->
 
+catch throw
+
 # c++
 # set print pretty on
 # set print array on
