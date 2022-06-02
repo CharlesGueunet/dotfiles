@@ -1,4 +1,7 @@
 **/.ccls-cache/
+**/.cache/
 build
 .debugRelease
 compile_commands.json
+.zshrc
+
