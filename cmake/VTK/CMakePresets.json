@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "configurePresets": [
+    {
+      "name": "VTK-Default",
+      "hidden": true,
+      "binaryDir": "build",
+      "generator": "Ninja",
+      "cacheVariables": {
+        "VTK_BUILD_TESTING": "ON",
+        "VTK_GROUP_ENABLE_MPI": "DEFAULT",
+        "VTK_SMP_IMPLEMENTATION_TYPE": "STDThread",
+        "VTK_USE_MPI": "ON",
+        "VTK_WRAP_PYTHON": "ON",
+        "VTK_DEBUG_LEAKS": "ON"
+      }
+    },
+    {
+      "name": "VTK-Release",
+      "inherits": "VTK-Default",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "name": "VTK-Debug",
+      "inherits": "VTK-Default",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    }
+  ]
+}
