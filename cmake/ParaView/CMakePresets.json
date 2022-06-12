@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "configurePresets": [
+    {
+      "name": "PV-Default",
+      "hidden": true,
+      "binaryDir": "build",
+      "generator": "Ninja",
+      "cacheVariables": {
+        "PARAVIEW_BUILD_TESTING": "ON",
+        "PARAVIEW_BUILD_VTK_TESTING": "ON",
+        "PARAVIEW_USE_MPI": "ON",
+        "PARAVIEW_USE_PYTHON": "ON",
+        "PARAVIEW_USE_VTKM": "OFF",
+        "VTK_SMP_IMPLEMENTATION_TYPE": "STDThread",
+        "VTK_DEBUG_LEAKS": "ON"
+      }
+    },
+    {
+      "name": "PV-Release",
+      "inherits": "PV-Default",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "name": "PV-Debug",
+      "inherits": "PV-Default",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    }
+  ]
+}
