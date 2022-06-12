@@ -16,3 +16,6 @@
 [submodule "kak"]
 	path = kak
 	url = https://github.com/CharlesGueunet/kak.git
+[submodule "nvim"]
+	path = nvim
+	url = https://github.com/AstroNvim/AstroNvim/
