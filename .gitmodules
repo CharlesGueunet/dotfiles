@@ -10,9 +10,6 @@
 [submodule "vimmic"]
 	path = vimmic
 	url = https://github.com/CharlesGueunet/vimmic
-[submodule "nvim"]
-	path = nvim
-	url = https://github.com/CharlesGueunet/vimmic
 [submodule "zsh"]
 	path = zsh
 	url = https://github.com/CharlesGueunet/zsh-config.git
