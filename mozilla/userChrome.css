@@ -23,6 +23,7 @@
 #urlbar {
   background: #222222 !important;
   color: var(--third-text) !important;
+  border-radius: 50px !important;
   /* text-align: center !important; */
   margin-top: 0px !important;
   border: none !important;

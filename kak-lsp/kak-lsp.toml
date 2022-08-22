@@ -6,6 +6,12 @@ verbosity = 3
 [server]
 timeout = 1800 # seconds = 30 minutes
 
+[language.bash]
+filetypes = ["sh"]
+roots = [".git", ".hg"]
+command = "bash-language-server"
+args = ["start"]
+
 # [language.c_cpp]
 # filetypes = ["c", "cpp"]
 # roots = [".ccls-root", ".ccls", "compile_commands.json", "./build/compile_commands.json"]
