@@ -32,14 +32,14 @@ roots= [ "build/" ]
 [language.python]
 filetypes = ["python"]
 roots = ["requirements.txt", "setup.py", ".git", ".hg"]
-command = "pyls"
+command = "pylsp"
 offset_encoding = "utf-8"
 workaround_server_sends_plaintext_labeled_as_markdown = true
 settings_section = "_"
 [language.python.settings._]
 # See https://github.com/palantir/python-language-server#configuration
 # and https://github.com/palantir/python-language-server/blob/develop/vscode-client/package.json
-pyls.configurationSources = ["flake8"]
+pylsp.configurationSources = ["flake8", ".flake8"]
 
 [language.rust]
 filetypes = ["rust"]
