@@ -16,7 +16,7 @@
         "VTK_DEBUG_LEAKS": "ON"
       },
       "environment": {
-        "CCACHE_BASEDIR": "/home/charles/Software/sources/paraview/dev"
+        "CCACHE_BASEDIR": "${sourceDir}"
       }
     },
     {
@@ -31,6 +31,15 @@
       "inherits": "PV-Default",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "CCache",
+      "configurePreset": "PV-Default",
+      "environment": {
+        "CCACHE_BASEDIR": "${sourceDir}"
       }
     }
   ]

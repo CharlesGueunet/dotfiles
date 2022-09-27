@@ -29,5 +29,14 @@
         "CMAKE_BUILD_TYPE": "Debug"
       }
     }
+  ],
+  "buildPresets": [
+    {
+      "name": "CCache",
+      "configurePreset": "VTK-Default",
+      "environment": {
+        "CCACHE_BASEDIR": "${sourceDir}"
+      }
+    }
   ]
 }

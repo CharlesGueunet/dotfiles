@@ -29,6 +29,12 @@ filetypes= ["cmake"]
 command= "cmake-language-server"
 roots= [ "build/" ]
 
+[language.markdown]
+filetypes = ["markdown", "md"]
+roots = [".marksman.toml", ""]
+command = "marksman"
+args = ["server"]
+
 [language.python]
 filetypes = ["python"]
 roots = ["requirements.txt", "setup.py", ".git", ".hg"]
