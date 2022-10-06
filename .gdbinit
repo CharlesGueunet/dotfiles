@@ -17,6 +17,7 @@ set print vtbl on
 set print demangle on
 set demangle-style gnu-v3
 set print sevenbit-strings off
+set print thread-events off
 
 # avoid messed up screen
 define hook-next
