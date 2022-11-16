@@ -14,6 +14,10 @@
   color: var(--third-text) !important;
   margin-right: -5px !important;
 }
+#sidebar-box {
+  max-width: none !important;
+  min-width: 28px !important;
+}
 #urlbar-container {
   background-color: #222222 !important;
 }
