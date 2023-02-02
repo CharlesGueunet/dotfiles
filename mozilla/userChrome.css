@@ -2,6 +2,10 @@
 #TabsToolbar {
   visibility: collapse;
 }
+#tabbrowser-tabs {
+  visibility: collapse !important;
+}
+
 #sidebar-header {
   visibility: collapse !important;
   background: #222222 !important;
@@ -32,6 +36,30 @@
   margin-top: 0px !important;
   border: none !important;
   box-shadow: none !important;
+}
+
+
+/*DIM UNLOADED TABS*/
+.tab.discarded { opacity: 0.5;}
+#sidebar-box {  min-width: 1px !important;}
+
+/*COLLAPSE IN DEFAULT STATE AND ADD TRANSITION*/
+#sidebar-box {
+  overflow: hidden;
+  min-width: 15px;
+  max-width: 15px;
+  transition: all 0.1s ease;
+  border-right: 1px solid #0c0c0d;
+  z-index: 2;
+}
+
+/*EXPAND TO 240px ON HOVER*/
+#sidebar-box:hover,
+#sidebar-box
+#sidebar {
+  min-width: 240px !important;
+  max-width: 240px !important;
+  z-index: 1;
 }
 
 /* ------------ /*
