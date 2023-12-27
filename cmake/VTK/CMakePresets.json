@@ -7,12 +7,21 @@
       "binaryDir": "build",
       "generator": "Ninja",
       "cacheVariables": {
+        "CMAKE_INSTALL_PREFIX": "/home/charles/Software/lib/vtk/master",
+        "CMAKE_LINKER_TYPE": "MOLD",
+        "CMAKE_C_COMPILER": "clang",
+        "CMAKE_CXX_COMPILER": "clang++",
         "VTK_BUILD_TESTING": "ON",
         "VTK_GROUP_ENABLE_MPI": "DEFAULT",
         "VTK_SMP_IMPLEMENTATION_TYPE": "STDThread",
+        "VTK_SMP_ENABLE_OPENMP": "ON",
+        "VTK_SMP_ENABLE_TBB": "ON",
         "VTK_USE_MPI": "ON",
         "VTK_WRAP_PYTHON": "ON",
         "VTK_DEBUG_LEAKS": "ON"
+      },
+      "environment": {
+        "CCACHE_BASEDIR": "${sourceDir}"
       }
     },
     {
@@ -33,7 +42,7 @@
   "buildPresets": [
     {
       "name": "CCache",
-      "configurePreset": "VTK-Default",
+      "configurePreset": "VTK-Release",
       "environment": {
         "CCACHE_BASEDIR": "${sourceDir}"
       }

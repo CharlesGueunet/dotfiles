@@ -7,6 +7,10 @@
       "binaryDir": "build",
       "generator": "Ninja",
       "cacheVariables": {
+        "CMAKE_INSTALL_PREFIX": "/home/charles/Software/install/paraview/",
+        "CMAKE_LINKER_TYPE": "MOLD",
+        "CMAKE_C_COMPILER": "clang",
+        "CMAKE_CXX_COMPILER": "clang++",
         "PARAVIEW_BUILD_TESTING": "ON",
         "PARAVIEW_BUILD_VTK_TESTING": "ON",
         "PARAVIEW_USE_MPI": "ON",
@@ -37,7 +41,7 @@
   "buildPresets": [
     {
       "name": "CCache",
-      "configurePreset": "PV-Default",
+      "configurePreset": "PV-Release",
       "environment": {
         "CCACHE_BASEDIR": "${sourceDir}"
       }
