@@ -8,13 +8,13 @@
 
 #sidebar-header {
   visibility: collapse !important;
-  background: #222222 !important;
+  background: #262626 !important;
   color: var(--third-text) !important;
 }
 #sidebar {
   max-width: none !important;
   min-width: 28px !important;
-  background: #222222 !important;
+  background: #262626 !important;
   color: var(--third-text) !important;
   margin-right: -5px !important;
 }
@@ -22,22 +22,17 @@
   max-width: none !important;
   min-width: 28px !important;
 }
-#urlbar-container {
-  background-color: #222222 !important;
-}
 #search-container {
-  background-color: #222222 !important;
+  background-color: #262626 !important;
 }
 #urlbar {
-  background: #222222 !important;
-  color: var(--third-text) !important;
-  border-radius: 50px !important;
-  /* text-align: center !important; */
-  margin-top: 0px !important;
-  border: none !important;
-  box-shadow: none !important;
+  background: #262626 !important;
 }
-
+#urlbar-background,#urlbar {
+  border-radius: 15px !important;
+  margin: 10px 0 0 0 0 !important;
+  border-color: #111111 !important;
+}
 
 /*DIM UNLOADED TABS*/
 .tab.discarded { opacity: 0.5;}
@@ -87,11 +82,7 @@ Enjoy <3
 {
   --tab-bg: #14151F !important;
                 /* tab bg */
-  #222222 #1D1E2A !important;
-     /* nav bar/url section */
-  --browser-bg: #1A1B26 !important;
-     /* url bg & hover bg */
-  --alt-bg: #1D1E2A !important;
+  #262626 #1D1E2A !important;
   /* alt bg color for selected tab*/
   --main-text: #aaa !important;
       /* tab text */
@@ -127,10 +118,10 @@ show: inherit and transparent
                       /* adjust size of tabs and navbar */
 #TabsToolbar .tabbrowser-tab {
   padding: 4px;
-  height: 20px !important;
+  height: 30px !important;
 }
 #nav-bar {
-  height: 30px !important;  /* don't go lower than 30 */
+  height: 40px !important;  /* don't go lower than 30 */
 }
 #main-window:not([privatebrowsingmode])[sizemode="normal"] #TabsToolbar {
     margin-left: -38px !important;
@@ -151,12 +142,12 @@ opacity: 0.6 !important;
 }
                    /* fix white bg when opening new tabs -- to fix*/
 browser, browser.display.background_color, tabbrowser tabpanels, .browserStack > browser, .browserStack {
-  background: #222222 !important;
-  background-color: #222222 !important;
+  background: #262626 !important;
+  background-color: #262626 !important;
 }
                             /* page identity box */
 #identity-box {
-    background: #222222 !important;
+    background: #262626 !important;
     color: var(--secondary-text) !important;
     opacity: 0 !important;
 }
@@ -173,17 +164,6 @@ opacity: 0.8 !important;
 #downloads-button, #new-tab-button, #ctraddon_bookmarks-button, #ctraddon_reload-button, bookmarks-button, reload-button {
     opacity: 0.8 !important;
 }
-/* fonts */
-#urlbar, #TabsToolbar .tabbrowser-tab, menu, .autocomplete-richlistbox, #menubar-items, statuspanel[type="overLink"] .statuspanel-label, toolbarbutton, #placeContent, #placesList, .editBMPanel_rowLabel, .textbox-input-box, .viewer-title.label.toolbar, .downloadTarget, .downloadDetails, #bookmarks-view-children, #sidebar-search-label, #sidebar-title, .menubar-text {
-    font-family: "Open Sans Semibold", "Segoe UI" !important;
-    font-size: 13px !important;
-    font-weight: 600 !important;
-}
-#clientBox {
-    font-family: "Open Sans Semibold", "Segoe UI" !important;
-    font-size: 12px !important;
-    font-weight: 600 !important;
-}
     /* remove icons */
 #memfx-toolbar-button, #reload-button, .box-inherit.toolbarbutton-menubutton-button, .scrollbutton-up, .scrollbutton-down, #stop-button {
   display: none;
@@ -191,7 +171,6 @@ opacity: 0.8 !important;
 #TabsToolbar .tabbrowser-tab {
   background: var(--tab-bg) !important;
   border: none !important;
-  border-radius: 0px !important;
   color: var(--main-text) !important;
   margin: 0px 0px 0px 0px !important;
   margin-top: -6px !important;
@@ -199,7 +178,7 @@ opacity: 0.8 !important;
 }
 #PanelUI-footer-inner > toolbarseparator {
     border: none !important;
-    background-color: #222222 !important;
+    background-color: #262626 !important;
 }
 #main-window {
  margin-top: -4px !important;
@@ -216,22 +195,11 @@ opacity: 0.8 !important;
 }
 /* nav bg color and sizes */
 #nav-bar-customization-target {
-    background: #222222 !important;
-}
-#urlbar {
-    background: #222222 !important;
-    color: var(--third-text) !important;
-    /* text-align: center !important; */
-    margin-top: 0px !important;
-    border: none !important;
-    box-shadow: none !important;
-}
-#urlbar:hover {
- color: var(--secondary-text); !important;
+    background: #262626 !important;
 }
 /* navbar */
 #navigator-toolbox > toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(:-moz-lwtheme) {
-    background-color: #222222 !important;
+    background-color: #262626 !important;
     margin-bottom: -2px !important;
 }
 /* speaker  icon */
@@ -247,7 +215,7 @@ opacity: 0.8 !important;
 }
 /* new tab */
 .tabs-newtab-button {
-    background: #222222 !important;
+    background: #262626 !important;
     width: 40px !important;
      margin-left: 0px !important;
     list-style-image: url('https://puu.sh/r4ZBa/ac8f176203.png') !important;
@@ -277,19 +245,18 @@ opacity: 0.8 !important;
      color: var(--main-text) !important;
 }
 .download.download-state, #clearDownloadsButton, richlistitem:not([selected]):hover, .addon[selected]:hover {
-    background: #222222 !important;
+    background: #262626 !important;
      color: var(--third-text) !important;
 }
 #placesToolbar, #placesView > splitter, #searchFilter, .checkbox-check, .fxaAccountBox, #verifiedManage, #fxaUnlinkButton, #fxaChangeDeviceName, #fxaSyncComputerName, .header, spacer.separator, #tabsElement, #handlersView > listheader, #engineList > treecols, #textbox, #configTree {
     border: none !important;
 }
 .checkbox-check {
-    border-radius: 0px !important;
     box-shadow: none !important;
 }
 .addon[selected] {
     border: none !important;
-    background: #222222 !important;
+    background: #262626 !important;
 }
 /* remove useless UI */
 #communityDesc, #contributeDesc {
@@ -300,7 +267,7 @@ opacity: 0.8 !important;
 }
 /* plugin icons */
 #notification-popup-box, .unknownIdentity {
-     background-color: #222222 !important;
+     background-color: #262626 !important;
     border-image-source: none !important;
 }
 #notification-popup-box, #page-proxy-favicon {
@@ -317,7 +284,7 @@ opacity: 0.8 !important;
 }
 /* menu icon */
 #PanelUI-button, #nav-bar-overflow-button {
-    background: #222222 !important;
+    background: #262626 !important;
 }
 
 
@@ -345,9 +312,9 @@ opacity: 0.8 !important;
 }
 #tablist-wrapper {
   scrollbar-width: none;
-  background-color: #222222;
+  background-color: #262626;
 }
 none;
-  background-color: #222222;
+  background-color: #262626;
 }
 */

@@ -139,7 +139,7 @@ separator_height = 2
 padding = 20
 
 # Horizontal padding.
-horizontal_padding = 20
+horizontal_padding = 40
 
 # Define a color for the separator.
 # possible values are:

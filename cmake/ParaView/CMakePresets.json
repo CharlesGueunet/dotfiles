@@ -13,7 +13,6 @@
         "PARAVIEW_USE_PYTHON": "ON",
         "PARAVIEW_USE_VTKM": "OFF",
         "VTK_SMP_IMPLEMENTATION_TYPE": "STDThread",
-        "VTK_DEBUG_LEAKS": "ON"
       },
       "environment": {
         "CCACHE_BASEDIR": "${sourceDir}"
@@ -31,6 +30,7 @@
       "inherits": "PV-Default",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug"
+        "VTK_DEBUG_LEAKS": "ON"
       }
     }
   ],
