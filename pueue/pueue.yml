@@ -1,16 +1,19 @@
 ---
 client:
+  restart_in_place: true
   read_local_logs: true
   show_confirmation_questions: false
   show_expanded_aliases: false
   dark_mode: true
   max_status_lines: ~
+  status_time_format: "%H:%M:%S"
+  status_datetime_format: "%d/%m %H:%M"
 daemon:
   default_parallel_tasks: 1
   pause_group_on_failure: false
   pause_all_on_failure: false
   callback: ~
-  groups: {}
+  callback_log_lines: 10
 shared:
   pueue_directory: /home/charles/.local/share/pueue
   use_unix_socket: true
