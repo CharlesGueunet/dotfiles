@@ -8,6 +8,9 @@ Styles for Min Max Close buttons
 */
 
 /* move buttons to correct position */
+#TabsToolbar .titlebar-buttonbox-container{ display: none !important; }
+#toolbar-menubar .titlebar-buttonbox-container{ display: flex !important; }
+
 .titlebar-buttonbox-container{
   position: fixed !important;
   overflow: clip !important;
@@ -15,6 +18,7 @@ Styles for Min Max Close buttons
   z-index: -1 !important;
   
   transition: var(--transition) !important;
+  & *{transition: var(--transition) !important;}
   
   /* set position to right */
   right: 0px;
@@ -46,19 +50,29 @@ Styles for Min Max Close buttons
 }
 
 /* remove window controls in f11 fullscreen or in clean mode */
-#main-window:is([sizemode="fullscreen"], [titlepreface*="?"]) {
-  --window-control-wdt: 0px;
-  
-  --buttonbox-left-hgt: 0px;
-  --buttonbox-right-hgt: 0px;
-  
-  --nav-rgt-btnbx-margin: 0px;
-  --nav-rgt-btnbx-button: 0px;
-    
-  --nav-lft-btnbx-margin: 0px;
-  --nav-lft-btnbx-button: 0px;
-  
-  .titlebar-buttonbox-container {display: none}
+#main-window:is([sizemode="fullscreen"], [titlepreface*="‍"]:not([customizing])) {
+  --window-control-wdt:   0px !important;                          /* <                             */
+  --buttonbox-left-hgt:   0px !important;                          /* <         !DUPLICATE!         */
+  --buttonbox-right-hgt:  0px !important;                          /* <                             */
+  --nav-rgt-btnbx-margin: 0px !important;                          /* <   This code block must be   */
+  --nav-rgt-btnbx-button: 0px !important;                          /* <      identical to the       */
+  --nav-lft-btnbx-margin: 0px !important;                          /* <      code block below       */
+  --nav-lft-btnbx-button: 0px !important;                          /* <                             */
+  .titlebar-buttonbox-container {display: none !important;}        /* < vvvvvvvvvvvvvvvvvvvvvvvvvvv */
+}
+
+/* remove window controls by setting */
+@media (-moz-bool-pref: "shyfox.remove.window.controls") { 
+  #main-window{
+    --window-control-wdt:   0px !important;                        /* < ^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+    --buttonbox-left-hgt:   0px !important;                        /* <                             */
+    --buttonbox-right-hgt:  0px !important;                        /* <         !DUPLICATE!         */
+    --nav-rgt-btnbx-margin: 0px !important;                        /* <                             */
+    --nav-rgt-btnbx-button: 0px !important;                        /* <   This code block must be   */
+    --nav-lft-btnbx-margin: 0px !important;                        /* <      identical to the       */
+    --nav-lft-btnbx-button: 0px !important;                        /* <      code block above       */
+    .titlebar-buttonbox-container {display: none !important;}      /* <                             */
+  }
 }
 
 /*
@@ -80,26 +94,26 @@ Styles for Min Max Close buttons
   }
   
   /* style when not enough space - merged into window border */
-  #main-window[titlepreface*="="][titlepreface*="+"] {
+  #main-window[titlepreface*="​"][titlepreface*="‌"] {
     .titlebar-button {padding: calc(var(--margin) / 2) 15px !important;}
     .titlebar-buttonbox-container{
       height: var(--margin) !important;
       top: 0px;
-      opacity: 0.3;
+      opacity: calc(var(--hide-bar-opct) / 2 );
       &:hover{opacity: 1}
     }
   }
   
   /* style when right toolbar is visible but navbar hidden - vertical orientation */
-  #main-window:not([titlepreface*="="])[titlepreface*="+"]:not([customizing]){
+  #main-window:not([titlepreface*="​"])[titlepreface*="‌"]:not([customizing]){
     .titlebar-buttonbox-container{height: 85px}
     .titlebar-buttonbox{
       display: flex;
       flex-direction: column-reverse;
     }
     
-    --buttonbox-right-wdt: 0px  !important;
-    --buttonbox-right-hgt: 85px !important;
+    --buttonbox-left-wdt: 0px  !important;
+    --buttonbox-right-hgt: 85px;
   }
 }
 
@@ -127,52 +141,74 @@ Styles for Min Max Close buttons
     .toolbarbutton-icon {
       background-image: none !important;
       stroke: none !important;
-      appearance: none !important;
-      border-radius: 100%;
-      padding: 4px;
       -moz-context-properties: fill, fill-opacity !important;
-      background-color: color-mix(in srgb, var(--bt-col) 5%, transparent);
     }
     
     &:hover .toolbarbutton-icon {background-color: color-mix(in srgb, var(--bt-col) 15%, transparent) !important;}
 
-    margin: 0 4px !important;
+    margin-inline: 8px !important;
+    padding: 0 !important;
     fill: var(--bt-col) !important;
     color: var(--bt-col) !important;
   }
 
+  @media not (-moz-bool-pref: "shyfox.force.native.controls"){
+    .titlebar-close   {list-style-image: url("../icons/gtk-window-close-symbolic.svg")    !important;}
+    .titlebar-min     {list-style-image: url("../icons/gtk-window-minimize-symbolic.svg") !important;}
+    .titlebar-max     {list-style-image: url("../icons/gtk-window-maximize-symbolic.svg") !important;}
+    .titlebar-restore {list-style-image: url("../icons/gtk-window-restore-symbolic.svg")  !important;}
+    
+    .titlebar-button .toolbarbutton-icon{
+      background-color: color-mix(in srgb, var(--bt-col) 5%, transparent);
+      appearance: none !important;
+      border-radius: 100%;
+      padding: 4px !important;
+    }
+  }
   
-  .titlebar-close   {list-style-image: url("../icons/gtk-window-close-symbolic.svg")    !important;}
-  .titlebar-min     {list-style-image: url("../icons/gtk-window-minimize-symbolic.svg") !important;}
-  .titlebar-max     {list-style-image: url("../icons/gtk-window-maximize-symbolic.svg") !important;}
-  .titlebar-restore {list-style-image: url("../icons/gtk-window-restore-symbolic.svg")  !important;}
+  @media (-moz-bool-pref: "shyfox.force.native.controls"){
+    .titlebar-close   {appearance: -moz-window-button-close    !important;}
+    .titlebar-min     {appearance: -moz-window-button-minimize !important;}
+    .titlebar-max     {appearance: -moz-window-button-maximize !important;}
+    .titlebar-restore {appearance: -moz-window-button-restore  !important;}
+  }
 }
-
 
 /* if GTK buttons position is right */
 @media (-moz-gtk-csd-available){
   @media not (-moz-gtk-csd-reversed-placement){
     
-    .titlebar-buttonbox-container{padding-right: 5px}
+    .titlebar-buttonbox-container{padding-right: 4px}
     
     /* style when not enough space - merged into window border */
-    #main-window:is([titlepreface*="="][titlepreface*="+"], [titlepreface*="?"]):not([customizing]){
+    #main-window:is([titlepreface*="​"][titlepreface*="‌"], [titlepreface*="‍"]):not([customizing]){
       .titlebar-buttonbox-container{
-        top: 0px;
         opacity: calc(var(--hide-bar-opct) / 2 );
         &:hover{opacity: 1};
-        height: var(--margin);
         right: 5px;
+      }
+      
+      .titlebar-button {margin: 0px !important;}
+      
+      @media not (-moz-bool-pref: "shyfox.force.native.controls"){
+        .titlebar-buttonbox-container{
+          top: 0px;
+          height: var(--margin);
+        }
         
-        .titlebar-button{
-          margin: 0px !important;
-          .toolbarbutton-icon {border-radius: 0 !important;}
+        .titlebar-button .toolbarbutton-icon {border-radius: 0 !important;}
+      }
+      
+      @media (-moz-bool-pref: "shyfox.force.native.controls"){
+        .titlebar-buttonbox-container{
+          top: -6px;
+          height: calc(var(--margin) + 6px);
         }
       }
     }
 
     /* style when right toolbar is visible but navbar hidden - vertical orientation */
-    #main-window:not([titlepreface*="="])[titlepreface*="+"]:not([customizing]){
+    #main-window:not([titlepreface*="​"])[titlepreface*="‌"]:not([customizing]){
       
       .titlebar-buttonbox{
         display: flex;
@@ -190,7 +226,7 @@ Styles for Min Max Close buttons
         35px
         + var(--window-control-gtk-max-wdt)
         + var(--window-control-gtk-min-wdt)
-      ) !important;
+      );
     }
   }
 }
@@ -231,18 +267,29 @@ Styles when GTK window controls on left or system is MacOS
   }
   
   /* style when not enough space - merged into window border */
-  #main-window:is([titlepreface*="-"][titlepreface*="+"], [titlepreface*="?"]):not([customizing]){
+  #main-window:is([titlepreface*="᠎"][titlepreface*="‌"], [titlepreface*="‍"]):not([customizing]){
+    .titlebar-buttonbox-container{
+      opacity: calc(var(--hide-bar-opct) / 2 );
+      &:hover{opacity: 1};
+      left: 5px;
+    }
+
+    .titlebar-button {margin: 0px !important;}
+
+    @media not (-moz-bool-pref: "shyfox.force.native.controls"){
       .titlebar-buttonbox-container{
         top: 0px;
-        opacity: calc(var(--hide-bar-opct) / 2 );
-        &:hover{opacity: 1};
         height: var(--margin);
-        left: 5px;
-        
-        .titlebar-button{
-          margin: 0px !important;
-          .toolbarbutton-icon {border-radius: 0 !important;}
-        }
       }
+
+      .titlebar-button .toolbarbutton-icon {border-radius: 0 !important;}
+    }
+
+    @media (-moz-bool-pref: "shyfox.force.native.controls"){
+      .titlebar-buttonbox-container{
+        top: -6px;
+        height: calc(var(--margin) + 6px);
+      }
+    }
   }
 }
