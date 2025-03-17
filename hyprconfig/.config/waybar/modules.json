@@ -12,15 +12,12 @@
     "on-scroll-down": "hyprctl dispatch workspace r+1",
     "on-click": "activate",
     "active-only": false,
-    "all-outputs": true,
+    "all-outputs": false,
     "format": "{}",
     "format-icons": {
       "urgent": "",
       "active": "",
       "default": ""
-    },
-    "persistent-workspaces": {
-      "*": 5
     }
   },
 
@@ -65,12 +62,6 @@
     "format": ""
   },
 
-    // Tools
-  "custom/tools": {
-    "format": "",
-    "tooltip-format": "Tools"
-  },
-
   // Cliphist
   "custom/cliphist": {
     "format": "",
@@ -78,17 +69,6 @@
     "on-click-right": "sleep 0.1 && ~/.config/ml4w/scripts/cliphist.sh d",
     "on-click-middle": "sleep 0.1 && ~/.config/ml4w/scripts/cliphist.sh w",
     "tooltip-format": "Left: Open clipboard Manager\nRight: Delete an entry\nMiddle: Clear list"
-  },
-
-  // Updates Count
-  "custom/updates": {
-    "format": "  {}",
-    "escape": true,
-    "return-type": "json",
-    "exec": "~/.config/ml4w/scripts/updates.sh",
-    "interval": 1800,
-    "on-click": "~/.config/ml4w/settings/installupdates.sh",
-    "on-click-right": "~/.config/ml4w/settings/software.sh"
   },
 
   // Wallpaper
@@ -157,14 +137,6 @@
     "on-click": "sleep 0.2;rofi -show drun -replace",
     "on-click-right": "~/.config/hypr/scripts/keybindings.sh",
     "tooltip-format": "Left: Open the application launcher\nRight: Show all keybindings"
-  },
-
-  // Power Menu
-  "custom/exit": {
-    "format": "",
-    "on-click": "~/.config/ml4w/scripts/wlogout.sh",
-    "on-click-right": "hyprlock",
-    "tooltip-format": "Left: Power menu\nRight: Lock screen"
   },
 
   // SwayNC
@@ -274,27 +246,11 @@
     "modules": ["custom/system", "disk", "cpu", "memory", "hyprland/language"]
   },
 
-  // Group Tools
-  "group/tools": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 300,
-      "children-class": "not-memory",
-      "transition-left-to-right": false
-    },
-    "modules": [
-      "custom/tools",
-      "custom/cliphist",
-      "custom/hypridle",
-      "custom/hyprshade"
-    ]
-  },
-
   // Group Links
   "group/links": {
     "orientation": "horizontal",
     "modules": [
-      "custom/chatgpt",
+//      "custom/chatgpt",
       "custom/empty"
     ]
   },
@@ -343,19 +299,6 @@
     // "format-good": "", // An empty format will hide the module
     // "format-full": "",
     "format-icons": [" ", " ", " ", " ", " "]
-  },
-
-  // Power Profiles Daemon
-  "power-profiles-daemon": {
-    "format": "{icon}",
-    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-    "tooltip": true,
-    "format-icons": {
-      "default": "",
-      "performance": "",
-      "balanced": "",
-      "power-saver": ""
-    }
   },
 
   // Pulseaudio

@@ -25,11 +25,11 @@
 
     // Modules Left
     "modules-left": [
-"custom/appmenu",
+        //"custom/appmenu",
         "group/links",
-//"wlr/taskbar",
+        "wlr/taskbar",
         "group/quicklinks",
-"hyprland/window",
+        "hyprland/window",
         "custom/empty"
     ],
 
@@ -44,12 +44,11 @@
         "pulseaudio",
 //"backlight",
         "bluetooth",
-"network",
         "battery", 
-        "power-profiles-daemon",
+"network",
         "group/hardware",
         "group/tools",
-"tray",
+        "tray",
         "custom/notification",
         "custom/exit",
         "custom/ml4w-welcome",
