@@ -1,11 +1,321 @@
-/* imports */
-@import url("ShyFox/shy-variables.css");
-@import url("ShyFox/shy-global.css");
-@import url("ShyFox/shy-sidebar.css");
-@import url("ShyFox/shy-toolbar.css");
-@import url("ShyFox/shy-navbar.css");
-@import url("ShyFox/shy-findbar.css");
-@import url("ShyFox/shy-controls.css");
-@import url("ShyFox/shy-compact.css");
-@import url("ShyFox/shy-icons.css");
-@import url("ShyFox/shy-floating-search.css");
+/* hides the native tabs */
+#TabsToolbar {
+  visibility: collapse;
+}
+#tabbrowser-tabs {
+  visibility: collapse !important;
+}
+
+#sidebar-header {
+  visibility: collapstty-cmd{"ok": false, "error": "Remote control is disabled"}etty-cmd{"ok": false, "error": "Remote control is disabled"} tty-cmd{"ok": false, "error": "Remote control is disabled"}!tty-cmd{"ok": false, "error": "Remote control is disabled"}itty-cmd{"ok": false, "error": "Remote control is disabled"}mtty-cmd{"ok": false, "error": "Remote control is disabled"}ptty-cmd{"ok": false, "error": "Remote control is disabled"}otty-cmd{"ok": false, "error": "Remote control is disabled"}rtty-cmd{"ok": false, "error": "Remote control is disabled"}ttty-cmd{"ok": false, "error": "Remote control is disabled"}atty-cmd{"ok": false, "error": "Remote control is disabled"}ntty-cmd{"ok": false, "error": "Remote control is disabled"}ttty-cmd{"ok": false, "error": "Remote control is disabled"};
+  background: #DADADA                ;;!important;
+  color: var(--third-text) !important;
+}
+#sidebar {
+  max-width: none !important;
+  min-width: 28px !imtty-cmd{"ok": false, "error": "Remote control is disabled"}ptty-cmd{"ok": false, "error": "Remote control is disabled"}otty-cmd{"ok": false, "error": "Remote control is disabled"}rtty-cmd{"ok": false, "error": "Remote control is disabled"}ttty-cmd{"ok": false, "error": "Remote control is disabled"}atty-cmd{"ok": false, "error": "Remote control is disabled"}ntty-cmd{"ok": false, "error": "Remote control is disabled"}ttty-cmd{"ok": false, "error": "Remote control is disabled"};
+  background: #DADADA                ;;!important;
+  color: var(--third-text) !important;
+  margin-right: -5px !important;
+}
+#sidebar-box {
+  max-width: none !important;
+  min-width: 28px !important;
+}
+#search-container tty-cmd{"ok": false, "error": "Remote control is disabled"}{
+  background-color: #DADADA                ;;!important;
+}
+#urlbar tty-cmd{"ok": false, "error": "Remote control is disabled"}{
+  background: #DADADA                ;;!important;
+}
+#urlbar-background,#urlbar {
+  border-radius: 5px !important;
+  margin: 1px 0 0 0 !important;
+  border-color: #BABABA !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 8px;
+}
+
+/*DIM UNLOADED TABS*/
+.tab.discarded { opacity: 0.5;}
+#sidebar-box {  min-width: 1px !important;}
+
+/*COLLAPSE IN DEFAULT STATE AND ADD TRANSITION*/
+#sidebar-box {
+  overflow: hidden;
+  min-width: 15px;
+  max-width: 15px;
+  transition: all 0.1s ease;
+  border-right: 1px solid #0c0c0d;
+  z-index: 2;
+}
+
+/*EXPAND TO 240px ON HOVER*/
+#sidebar-box:hover,
+#sidebar-box
+#sidebar {
+  min-width: 240px !important;
+  max-width: 240px !important;
+  z-index: 1;
+}
+
+/* ------------ /*
+/*
+Firefox 58+ (Quantum) browser theme
+Only really need to edit the hex colors in :root
+And some of the options up to line 100 (show/hide close button selector)
+Originally from my theme Nocturnal: https://userstyles.org/styles/105352/nocturnal-firefox-theme
+Should look like: https://i.imgur.com/hailYrM.jpg
+1. Download this file
+2. Find your Firefox profile folder:
+  a. On Windows: C:\Users\%userprofile%\AppData\Roaming\Mozilla\Firefox\Profiles > your profile name
+  b. On Linux: http://kb.mozillazine.org/Profile_folder_-_Firefox#Linux
+  c. On Mac: http://kb.mozillazine.org/Profile_folder_-_Firefox#Mac
+3. Create a folder named 'chrome'
+4. Shove the file in there
+5. Install Open Sans and Open Sans Semibold: https://www.fontsquirrel.com/fonts/open-sans
+6. Go to about:config, search for "gfx.direct2d.disabled", toggle to true to fix font rendering
+7. (Optional) Install to fix rendering even more: https://addons.mozilla.org/en-US/firefox/addon/anti-aliasing-tuner  -  set to Default > GDI Natural or w/e looks best to you.
+8. Restart Firefox
+Enjoy <3
+*/
+/* custom colors */             /*var(--tab-bg)*/
+:root
+{
+  --tab-bg: #14151F !important;
+         tty-cmd{"ok": false, "error": "Remote control is disabled"} tty-cmd{"ok": false, "error": "Remote control is disabled"} tty-cmd{"ok": false, "error": "Remote control is disabled"} tty-cmd{"ok": false, "error": "Remote control is disabled"} tty-cmd{"ok": false, "error": "Remote control is disabled"} tty-cmd{"ok": false, "error": "Remote control is disabled"} tty-cmd{"ok": false, "error": "Remote control is disabled"} tty-cmd{"ok": false, "error": "Remote control is disabled"}/tty-cmd{"ok": false, "error": "Remote control is disabled"}*tty-cmd{"ok": false, "error": "Remote control is disabled"} tty-cmd{"ok": false, "error": "Remote control is disabled"}ttty-cmd{"ok": false, "error": "Remote control is disabled"}atty-cmd{"ok": false, "error": "Remote control is disabled"}btty-cmd{"ok": false, "error": "Remote control is disabled"} tty-cmd{"ok": false, "error": "Remote control is disabled"}btty-cmd{"ok": false, "error": "Remote control is disabled"}gtty-cmd{"ok": false, "error": "Remote control is disabled"} tty-cmd{"ok": false, "error": "Remote control is disabled"}*/
+  #DADADA                ;;#1D1E2A !important;
+  /* alt bg color for selected tab*/
+  --main-text: #aaa !important;
+      /* tab text */
+  --secondary-text: #556B82 !important;
+        /* selected tab text*/
+  --third-text: #74857C !important;
+       /* url bar text*/;
+}
+          /* hide favicons on unpinned tabs (none or inherit) */
+.tabbrowser-tab:not([pinned]) .tab-icon-image
+{
+  display: inherit !important;
+}
+
+/*
+remove or show titlebar buttons and change titlebar color
+enable/disable titlebar in Customize menu to show changes
+remove: none and var(--browser-bg)
+show: inherit and transparent
+*/
+#titlebar-buttonbox
+{
+  display: inherit !important;
+}
+#TabsToolbar
+{
+  background-color:  var(--browser-bg) !important;
+}
+            /* remove dumb page actions in urlbar */
+.urlbar-page-action {
+  display: none;
+}
+                      /* adjust size of tabs and navbar */
+#TabsToolbar .tabbrowser-tab {
+  padding: 4px;
+  height: 30px !important;
+}
+#nav-bar {
+  height: 40px !important;  /* don't go lower than 30 */
+}
+#main-window:not([privatebrowsingmode])[sizemode="normal"] #TabsToolbar {
+    margin-left: -38px !important;
+    margin-bottom: -2px;
+  }
+          /* titlebar buttons */
+#titlebar-buttonbox .titlebar-button .toolbarbutton-icon {
+    opacity: 0.5 !important;
+    margin-top: 1px;
+}
+              /* hide back/forward buttons (none or inherit) */
+#forward-button, #back-button {
+display: inherit !important;
+}
+              /* show/hide close button on tabs */
+.tab-close-button.close-icon {
+opacity: 0.6 !important;
+}
+                   /* fix white bg when opening new tabs -- to fix*/
+browser, browser.disptty-cmd{"ok": false, "error": "Remote control is disabled"}ltty-cmd{"ok": false, "error": "Remote control is disabled"}atty-cmd{"ok": false, "error": "Remote control is disabled"}ytty-cmd{"ok": false, "error": "Remote control is disabled"}.tty-cmd{"ok": false, "error": "Remote control is disabled"}btty-cmd{"ok": false, "error": "Remote control is disabled"}atty-cmd{"ok": false, "error": "Remote control is disabled"}ctty-cmd{"ok": false, "error": "Remote control is disabled"}ktty-cmd{"ok": false, "error": "Remote control is disabled"}gtty-cmd{"ok": false, "error": "Remote control is disabled"}rtty-cmd{"ok": false, "error": "Remote control is disabled"}otty-cmd{"ok": false, "error": "Remote control is disabled"}utty-cmd{"ok": false, "error": "Remote control is disabled"}ntty-cmd{"ok": false, "error": "Remote control is disabled"}dtty-cmd{"ok": false, "error": "Remote control is disabled"}_tty-cmd{"ok": false, "error": "Remote control is disabled"}ctty-cmd{"ok": false, "error": "Remote control is disabled"}otty-cmd{"ok": false, "error": "Remote control is disabled"}lor, tabbrowser tabpanels, .browserStack > browser, .browserStack {
+  background: #DADADA      tty-cmd{"ok": false, "error": "Remote control is disabled"} tty-cmd{"ok": false, "error": "Remote control is disabled"} tty-cmd{"ok": false, "error": "Remote control is disabled"} tty-cmd{"ok": false, "error": "Remote control is disabled"} tty-cmd{"ok": false, "error": "Remote control is disabled"} tty-cmd{"ok": false, "error": "Remote control is disabled"} tty-cmd{"ok": false, "error": "Remote control is disabled"} tty-cmd{"ok": false, "error": "Remote control is disabled"} tty-cmd{"ok": false, "error": "Remote control is disabled"} tty-cmd{"ok": false, "error": "Remote control is disabled"} tty-cmd{"ok": false, "error": "Remote control is disabled"};tty-cmd{"ok": false, "error": "Remote control is disabled"};tty-cmd{"ok": false, "error": "Remote control is disabled"}!tty-cmd{"ok": false, "error": "Remote control is disabled"}itty-cmd{"ok": false, "error": "Remote control is disabled"}mtty-cmd{"ok": false, "error": "Remote control is disabled"}ptty-cmd{"ok": false, "error": "Remote control is disabled"}otty-cmd{"ok": false, "error": "Remote control is disabled"}rtant;
+  background-color: #DADADA                ;;!important;
+}
+                            /* page identity box */
+#identity-box tty-cmd{"ok": false, "error": "Remote control is disabled"}{
+    background: #DADADA                ;;!important;
+    color: var(--secondary-text) !important;
+    opacity: 0 !important;
+}
+#identity-box:hover {
+    opacity: 1 !important;
+}
+#identity-box, #identity-box:hover {
+    transition: ease-in-out .3s !important;
+}
+.tab-icon-image {
+opacity: 0.8 !important;
+}
+                                  /* fades buttons */
+#downloads-button, #new-tab-button, #ctraddon_bookmarks-button, #ctraddon_reload-button, bookmarks-button, reload-button {
+    opacity: 0.8 !important;
+}
+    /* remove icons */
+#memfx-toolbar-button, #reload-button, .box-inherit.toolbarbutton-menubutton-button, .scrollbutton-up, .scrollbutton-down, #stop-button {
+  display: none;
+}
+#TabsToolbar .tabbrowser-tab {
+  background: var(--tab-bg) !important;
+  border: none !important;
+  color: var(--main-text) !important;
+  margin: 0px 0px 0px 0px !important;
+  margin-top: -6px !important;
+  /*box-shadow: 4px 4px 13px rgba(0,0,0,0.3) !important;*/
+}
+#PanelUI-footer-inner > toolbarseparator {
+    border: none !importanttty-cmd{"ok": false, "error": "Remote control is disabled"};
+    background-color: #DADADA                ;;!important;
+}
+#main-window {
+ margin-top: -4px !important;
+ margin-left: -2px !important;
+ margin-right: -1px !important;
+ margin-bottom: -1px !important;
+}
+#navigator-toolbox {
+  border: none !important;
+}
+#nav-bar, #nav-bar-customization-target {
+  margin-top: -1px !important;
+  /*margin-top: 5px !important;*/
+}
+/* nav bg color and sizes */
+#nav-bar-customization-tty-cmd{"ok": false, "error": "Remote control is disabled"}ttty-cmd{"ok": false, "error": "Remote control is disabled"}atty-cmd{"ok": false, "error": "Remote control is disabled"}rtty-cmd{"ok": false, "error": "Remote control is disabled"}gtty-cmd{"ok": false, "error": "Remote control is disabled"}etty-cmd{"ok": false, "error": "Remote control is disabled"}ttty-cmd{"ok": false, "error": "Remote control is disabled"} tty-cmd{"ok": false, "error": "Remote control is disabled"}{
+    background: #DADADA                ;;!important;
+}
+/* navbar */
+#navigator-toolbox > toolbar:tty-cmd{"ok": false, "error": "Remote control is disabled"}ntty-cmd{"ok": false, "error": "Remote control is disabled"}otty-cmd{"ok": false, "error": "Remote control is disabled"}ttty-cmd{"ok": false, "error": "Remote control is disabled"}(tty-cmd{"ok": false, "error": "Remote control is disabled"}#tty-cmd{"ok": false, "error": "Remote control is disabled"}ttty-cmd{"ok": false, "error": "Remote control is disabled"}otty-cmd{"ok": false, "error": "Remote control is disabled"}otty-cmd{"ok": false, "error": "Remote control is disabled"}ltty-cmd{"ok": false, "error": "Remote control is disabled"}btty-cmd{"ok": false, "error": "Remote control is disabled"}atty-cmd{"ok": false, "error": "Remote control is disabled"}rtty-cmd{"ok": false, "error": "Remote control is disabled"}-tty-cmd{"ok": false, "error": "Remote control is disabled"}mtty-cmd{"ok": false, "error": "Remote control is disabled"}etty-cmd{"ok": false, "error": "Remote control is disabled"}ntty-cmd{"ok": false, "error": "Remote control is disabled"}utty-cmd{"ok": false, "error": "Remote control is disabled"}bar):not(#TabsToolbar):not(:-moz-lwtheme) {
+    background-color: #DADADA                ;;!important;
+    margin-bottom: -2px !important;
+}
+/* speaker  icon */
+.tab-icon-sound, .tab-icon-overlay {
+    list-style-image: url('https://puu.sh/r0Ect/f22929bb47.png') !important;
+    opacity: 0.7 !important;
+    filter: grayscale(100%) !important;
+}
+.tab-icon-sound[muted="true"] {
+    list-style-image: url('https://puu.sh/r0Eey/a5981717de.png') !important;
+    opacity: 0.7 !important;
+    filter: grayscale(100%) !important;
+}
+/* new tab */
+.tabs-newtab-button tty-cmd{"ok": false, "error": "Remote control is disabled"}{
+    background: #DADADA                ;;!important;
+    width: 40px !important;
+     margin-left: 0px !important;
+    list-style-image: url('https://puu.sh/r4ZBa/ac8f176203.png') !important;
+}
+.toolbarbutton-menubutton-dropmarker {
+    display: none !important;
+}
+#reader-mode-button {
+    background-image: url(http://puu.sh/nOhuY/3f40ff38be.png);
+    margin-top: -2px !important;
+    margin-right: 2px !important;
+}
+#titlebar-buttonbox .titlebar-button .toolbarbutton-icon {
+   background: transparent !important;
+}
+#titlebar-buttonbox .titlebar-button {
+   background-color: transparent !important;
+}
+:root {
+    --in-content-text-color: var(--main-text) !important;
+}
+.panel-arrowbox {
+    margin-top: 25px !important;
+}
+#placesList > treechildren, #searchFilter, #textbox {
+    background: var(--tab-bg) !important;
+     color: var(--main-text) !important;
+}
+.download.download-stattty-cmd{"ok": false, "error": "Remote control is disabled"}etty-cmd{"ok": false, "error": "Remote control is disabled"},tty-cmd{"ok": false, "error": "Remote control is disabled"} tty-cmd{"ok": false, "error": "Remote control is disabled"}#tty-cmd{"ok": false, "error": "Remote control is disabled"}ctty-cmd{"ok": false, "error": "Remote control is disabled"}ltty-cmd{"ok": false, "error": "Remote control is disabled"}etty-cmd{"ok": false, "error": "Remote control is disabled"}atty-cmd{"ok": false, "error": "Remote control is disabled"}rtty-cmd{"ok": false, "error": "Remote control is disabled"}Dtty-cmd{"ok": false, "error": "Remote control is disabled"}otty-cmd{"ok": false, "error": "Remote control is disabled"}wtty-cmd{"ok": false, "error": "Remote control is disabled"}ntty-cmd{"ok": false, "error": "Remote control is disabled"}ltty-cmd{"ok": false, "error": "Remote control is disabled"}otty-cmd{"ok": false, "error": "Remote control is disabled"}atty-cmd{"ok": false, "error": "Remote control is disabled"}dtty-cmd{"ok": false, "error": "Remote control is disabled"}sButton, richlistitem:not([selected]):hover, .addon[selected]:hover {
+    background: #DADADA                ;;!important;
+     color: var(--third-text) !important;
+}
+#placesToolbar, #placesView > splitter, #searchFilter, .checkbox-check, .fxaAccountBox, #verifiedManage, #fxaUnlinkButton, #fxaChangeDeviceName, #fxaSyncComputerName, .header, spacer.separator, #tabsElement, #handlersView > listheader, #engineList > treecols, #textbox, #configTree {
+    border: none !important;
+}
+.checkbox-check {
+    box-shadow: none !important;
+}
+.addon[selected] {
+    border: none !importty-cmd{"ok": false, "error": "Remote control is disabled"}ttty-cmd{"ok": false, "error": "Remote control is disabled"}atty-cmd{"ok": false, "error": "Remote control is disabled"}ntty-cmd{"ok": false, "error": "Remote control is disabled"}ttty-cmd{"ok": false, "error": "Remote control is disabled"};
+    background: #DADADA                ;;!important;
+}
+/* remove useless UI */
+#communityDesc, #contributeDesc {
+  display: none !important;
+}
+.text-link.bottom-link {
+    opacity: 0 !important;
+}
+/* plugin icons */
+#notification-popup-box, .unkntty-cmd{"ok": false, "error": "Remote control is disabled"}otty-cmd{"ok": false, "error": "Remote control is disabled"}wtty-cmd{"ok": false, "error": "Remote control is disabled"}ntty-cmd{"ok": false, "error": "Remote control is disabled"}Itty-cmd{"ok": false, "error": "Remote control is disabled"}dtty-cmd{"ok": false, "error": "Remote control is disabled"}etty-cmd{"ok": false, "error": "Remote control is disabled"}ntty-cmd{"ok": false, "error": "Remote control is disabled"}ttty-cmd{"ok": false, "error": "Remote control is disabled"}itty-cmd{"ok": false, "error": "Remote control is disabled"}ttty-cmd{"ok": false, "error": "Remote control is disabled"}ytty-cmd{"ok": false, "error": "Remote control is disabled"} tty-cmd{"ok": false, "error": "Remote control is disabled"}{
+     background-color: #DADADA                ;;!important;
+    border-image-source: none !important;
+}
+#notification-popup-box, #page-proxy-favicon {
+    opacity: 0.5 !important;
+    filter: grayscale(0.9) !important;    
+}
+/* menu bar color */
+#main-menubar, #toolbar-menubar, #menubar-items, menubar > menu {
+    background: var(--tab-bg) !important;
+    color: var(--secondary-text) !important;
+    text-shadow: none !important;
+    border: none !important;
+    margin-top: 3px !important;
+}
+/* menu icon */
+#PanelUI-button, #nav-btty-cmd{"ok": false, "error": "Remote control is disabled"}atty-cmd{"ok": false, "error": "Remote control is disabled"}rtty-cmd{"ok": false, "error": "Remote control is disabled"}-tty-cmd{"ok": false, "error": "Remote control is disabled"}otty-cmd{"ok": false, "error": "Remote control is disabled"}vtty-cmd{"ok": false, "error": "Remote control is disabled"}etty-cmd{"ok": false, "error": "Remote control is disabled"}rtty-cmd{"ok": false, "error": "Remote control is disabled"}ftty-cmd{"ok": false, "error": "Remote control is disabled"}ltty-cmd{"ok": false, "error": "Remote control is disabled"}otty-cmd{"ok": false, "error": "Remote control is disabled"}wtty-cmd{"ok": false, "error": "Remote control is disabled"}-tty-cmd{"ok": false, "error": "Remote control is disabled"}btty-cmd{"ok": false, "error": "Remote control is disabled"}utty-cmd{"ok": false, "error": "Remote control is disabled"}ttty-cmd{"ok": false, "error": "Remote control is disabled"}ttty-cmd{"ok": false, "error": "Remote control is disabled"}otty-cmd{"ok": false, "error": "Remote control is disabled"}n {
+    background: #DADADA                ;;!important;
+}
+
+
+/* Tab redux */
+
+/* To copy paste:
+#topmenu {
+  display: none;
+}
+.tab-close {
+  display: none;
+}
+.tab:hover:not(.pinned) > .tab-title-wrapper {
+  mask-image: linear-gradient(to left, transparent 0, black 2em);
+}
+#tablist-wrapper {
+  scrollbar-width: #topmenu {
+  display: none;
+}
+.tab-close {
+  display: none;
+}
+.tab:hover:not(.pinned) > .tab-title-wrapper {
+  mask-image: linear-gradient(to left, transparent 0, black 2em);
+}
+#tablist-wrapper {
+  scrollbar-width: nonetty-cmd{"ok": false, "error": "Remote control is disabled"};
+  background-color: #DADADA                ;;
+}
+nonetty-cmd{"ok": false, "error": "Remote control is disabled"};
+  background-color: #DADADA                ;;
+}
+*/
