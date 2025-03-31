@@ -29,29 +29,30 @@
         "group/links",
         "wlr/taskbar",
         "group/quicklinks",
-        "hyprland/window",
+        "hyprland/workspaces",
         "custom/empty"
     ],
 
     // Modules Center
     "modules-center": [
-        "hyprland/workspaces"
+        "hyprland/window",
+        "custom/empty"
     ],
 
     // Modules Right    
     "modules-right": [
         "custom/updates",
+        "custom/ml4w-welcome",
         "pulseaudio",
 //"backlight",
         "bluetooth",
         "battery", 
-"network",
+        "network",
         "group/hardware",
         "group/tools",
         "tray",
         "custom/notification",
         "custom/exit",
-        "custom/ml4w-welcome",
         "clock"
     ]
 }
