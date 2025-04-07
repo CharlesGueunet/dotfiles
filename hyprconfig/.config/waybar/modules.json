@@ -11,14 +11,14 @@
     "on-scroll-up": "hyprctl dispatch workspace r-1",
     "on-scroll-down": "hyprctl dispatch workspace r+1",
     "on-click": "activate",
-    "active-only": false,
+    "active-only": true,
     "all-outputs": false,
     "format": "{}",
     "format-icons": {
       "urgent": "",
       "active": "",
       "default": ""
-    }
+    },
   },
 
   // Taskbar
@@ -40,6 +40,7 @@
 
   // Hyprland Window
   "hyprland/window": {
+    "max-length": 60,
     "rewrite": {
       "(.*) - Brave": "$1",
       "(.*) - Chromium": "$1",
@@ -62,6 +63,12 @@
     "format": ""
   },
 
+    // Tools
+  "custom/tools": {
+    "format": "",
+    "tooltip-format": "Tools"
+  },
+
   // Cliphist
   "custom/cliphist": {
     "format": "",
@@ -69,6 +76,17 @@
     "on-click-right": "sleep 0.1 && ~/.config/ml4w/scripts/cliphist.sh d",
     "on-click-middle": "sleep 0.1 && ~/.config/ml4w/scripts/cliphist.sh w",
     "tooltip-format": "Left: Open clipboard Manager\nRight: Delete an entry\nMiddle: Clear list"
+  },
+
+  // Updates Count
+  "custom/updates": {
+    "format": "  {}",
+    "escape": true,
+    "return-type": "json",
+    "exec": "~/.config/ml4w/scripts/updates.sh",
+    "interval": 1800,
+    "on-click": "~/.config/ml4w/settings/installupdates.sh",
+    "on-click-right": "~/.config/ml4w/settings/software.sh"
   },
 
   // Wallpaper
@@ -139,18 +157,30 @@
     "tooltip-format": "Left: Open the application launcher\nRight: Show all keybindings"
   },
 
+  // Power Menu
+  "custom/exit": {
+    "format": "",
+    "on-click": "~/.config/ml4w/scripts/wlogout.sh",
+    "on-click-right": "hyprlock",
+    "tooltip-format": "Left: Power menu\nRight: Lock screen"
+  },
+
   // SwayNC
   "custom/notification": {
     "tooltip-format": "Left: Notifications\nRight: Do not disturb",
     "format": "{icon}",
     "format-icons": {
-      "notification": "<span foreground='red'><sup></sup></span>",
+      "notification":
+        "<span rise='8pt'><span foreground='red'><sup></sup></span></span>",
       "none": "",
-      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-notification":
+        "<span rise='8pt'><span foreground='red'><sup></sup></span></span>",
       "dnd-none": "",
-      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-notification":
+        "<span rise='8pt'><span foreground='red'><sup></sup></span></span>",
       "inhibited-none": "",
-      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-notification":
+        "<span rise='8pt'><span foreground='red'><sup></sup></span></span>",
       "dnd-inhibited-none": ""
     },
     "return-type": "json",
@@ -246,11 +276,27 @@
     "modules": ["custom/system", "disk", "cpu", "memory", "hyprland/language"]
   },
 
+  // Group Tools
+  "group/tools": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "not-memory",
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "custom/tools",
+      "custom/cliphist",
+      "custom/hypridle",
+      "custom/hyprshade"
+    ]
+  },
+
   // Group Links
   "group/links": {
     "orientation": "horizontal",
     "modules": [
-//      "custom/chatgpt",
+      "custom/chatgpt",
       "custom/empty"
     ]
   },
@@ -288,7 +334,7 @@
   // Battery
   "battery": {
     "states": {
-      // "good": 95,
+      "good": 95,
       "warning": 30,
       "critical": 15
     },
@@ -296,9 +342,22 @@
     "format-charging": "  {capacity}%",
     "format-plugged": "  {capacity}%",
     "format-alt": "{icon}  {time}",
-    // "format-good": "", // An empty format will hide the module
-    // "format-full": "",
+    "format-good": "", // An empty format will hide the module
+    "format-full": "",
     "format-icons": [" ", " ", " ", " ", " "]
+  },
+
+  // Power Profiles Daemon
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": ""
+    }
   },
 
   // Pulseaudio

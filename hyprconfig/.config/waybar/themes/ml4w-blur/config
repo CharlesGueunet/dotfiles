@@ -25,34 +25,34 @@
 
     // Modules Left
     "modules-left": [
-        //"custom/appmenu",
+"custom/appmenu",
         "group/links",
-        "wlr/taskbar",
+//"wlr/taskbar",
         "group/quicklinks",
-        "hyprland/workspaces",
+"hyprland/window",
         "custom/empty"
     ],
 
     // Modules Center
     "modules-center": [
-        "hyprland/window",
-        "custom/empty"
+        "hyprland/workspaces"
     ],
 
     // Modules Right    
     "modules-right": [
         "custom/updates",
-        "custom/ml4w-welcome",
         "pulseaudio",
 //"backlight",
         "bluetooth",
+"network",
         "battery", 
-        "network",
+        "power-profiles-daemon",
         "group/hardware",
         "group/tools",
-        "tray",
+"tray",
         "custom/notification",
         "custom/exit",
+        "custom/ml4w-welcome",
         "clock"
     ]
 }
