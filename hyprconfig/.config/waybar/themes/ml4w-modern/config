@@ -11,10 +11,10 @@
 {
     // General Settings
     "layer": "top",
-    "margin-top": 14,
+    "margin-top": 0,
     "margin-bottom": 0,
-    "margin-left": 14,
-    "margin-right": 14,    
+    "margin-left": 4,
+    "margin-right": 4,    
     "spacing": 0,
 
     // Load Modules
