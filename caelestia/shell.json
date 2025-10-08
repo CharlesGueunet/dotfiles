@@ -1,0 +1,26 @@
+{
+  "appearance": {
+    "rounding": {
+      "scale": 1
+    }
+  },
+  "border": {
+    "rounding": 0,
+    "thickness": 1
+  },
+  "dashboard": {
+    "enabled": true,
+    "dragThreshold": 50,
+    "mediaUpdateInterval": 500,
+    "showOnHover": true
+  },
+  "sidebar": {
+    "enabled": false
+  },
+  "services": {
+    "audioIncrement": 0.1,
+    "defaultPlayer": "Spotify",
+    "weatherLocation": "Lyon",
+    "useFahrenheit": false
+  }
+}
