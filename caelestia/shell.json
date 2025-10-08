@@ -17,6 +17,60 @@
   "sidebar": {
     "enabled": false
   },
+  "bar": {
+    "clock": {
+      "showIcon": true
+    },
+    "entries": [
+      {
+        "id": "logo",
+        "enabled": false
+      },
+      {
+        "id": "workspaces",
+        "enabled": true
+      },
+      {
+        "id": "spacer",
+        "enabled": true
+      },
+      {
+        "id": "activeWindow",
+        "enabled": true
+      },
+      {
+        "id": "spacer",
+        "enabled": true
+      },
+      {
+        "id": "tray",
+        "enabled": true
+      },
+      {
+        "id": "clock",
+        "enabled": false
+      },
+      {
+        "id": "statusIcons",
+        "enabled": true
+      },
+      {
+        "id": "power",
+        "enabled": true
+      }
+    ],
+    "workspaces": {
+      "activeIndicator": true,
+      "activeLabel": "⬤ ",
+      "activeTrail": false,
+      "label": "   ",
+      "occupiedBg": false,
+      "occupiedLabel": "- ",
+      "perMonitorWorkspaces": true,
+      "showWindows": true,
+      "shown": 4
+    }
+  },
   "services": {
     "audioIncrement": 0.1,
     "defaultPlayer": "Spotify",
