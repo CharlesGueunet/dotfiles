@@ -2,6 +2,12 @@
   "appearance": {
     "rounding": {
       "scale": 1
+    },
+    "padding": {
+      "scale": 0.3
+    },
+    "spacing": {
+      "scale": 0.6
     }
   },
   "border": {
@@ -16,6 +22,34 @@
   },
   "sidebar": {
     "enabled": false
+  },
+  "paths": {
+    "mediaGif": "/home/charles/Documents/Pictures//record-8329_256.gif",
+    "sessionGif": "/home/charles/Documents/Pictures/motion-graphics-17989_256.gif"
+  },
+  "general": {
+    "idle": {
+      "lockBeforeSleep": true,
+      "inhibitWhenAudio": false,
+      "timeouts": [
+        {
+          "timeout": 600,
+          "idleAction": "lock"
+        }
+      ]
+    }
+  },
+  "background": {
+    "desktopClock": {
+      "enabled": true
+    },
+    "enabled": true,
+    "visualiser": {
+      "enabled": true,
+      "autoHide": true,
+      "rounding": 1,
+      "spacing": 1
+    }
   },
   "bar": {
     "clock": {
@@ -59,6 +93,15 @@
         "enabled": true
       }
     ],
+    "status": {
+      "showAudio": true,
+      "showBattery": true,
+      "showBluetooth": true,
+      "showKbLayout": false,
+      "showMicrophone": false,
+      "showNetwork": true,
+      "showLockStatus": false
+    },
     "workspaces": {
       "activeIndicator": true,
       "activeLabel": "⬤ ",
@@ -73,6 +116,7 @@
   },
   "services": {
     "audioIncrement": 0.1,
+    "gpuType": "nvidia",
     "defaultPlayer": "Spotify",
     "weatherLocation": "Lyon",
     "useFahrenheit": false
