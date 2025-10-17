@@ -12,7 +12,7 @@
   },
   "border": {
     "rounding": 0,
-    "thickness": 1
+    "thickness": 0
   },
   "dashboard": {
     "enabled": true,
@@ -21,7 +21,7 @@
     "showOnHover": true
   },
   "sidebar": {
-    "enabled": false
+    "enabled": true
   },
   "paths": {
     "mediaGif": "/home/charles/Documents/Pictures//record-8329_256.gif",
@@ -53,7 +53,7 @@
   },
   "bar": {
     "clock": {
-      "showIcon": true
+      "showIcon": false
     },
     "entries": [
       {
@@ -82,7 +82,7 @@
       },
       {
         "id": "clock",
-        "enabled": false
+        "enabled": true
       },
       {
         "id": "statusIcons",
