@@ -25,7 +25,8 @@
   },
   "paths": {
     "mediaGif": "/home/charles/Documents/Pictures//record-8329_256.gif",
-    "sessionGif": "/home/charles/Documents/Pictures/motion-graphics-17989_256.gif"
+    "sessionGif": "/home/charles/Documents/Pictures/motion-graphics-17989_256.gif",
+    "wallpaperDir": "~/wallpaper/"
   },
   "general": {
     "idle": {
